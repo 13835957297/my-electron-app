@@ -20,7 +20,8 @@
     "icon": "assets/icon.png"
   },
   "linux": {
-    "target": ["AppImage", "deb"],
+    "target": ["AppImage", "deb", "rpm"],
+    "arch": ["arm64"],
     "icon": "assets/icon.png"
   }
 }

@@ -1,6 +1,9 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 
+ipcMain.handle('ping', async (event) => {
+  return 'pong!'  // 可以返回任意数据
+})
 function createWindow () {
   const win = new BrowserWindow({
     width: 1000,
