@@ -8,6 +8,13 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 1000,
     height: 700,
+    title: '我的 Electron 应用',
+    myWindowId: 1,
+    kiosk: true,           // 强制全屏
+    alwaysOnTop: true,     // 强制置顶
+    frame: false,          // 可选：隐藏边框和按钮
+    resizable: false,      // 禁止调整大小
+    fullscreenable: true, // 防止用户退出全屏
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,

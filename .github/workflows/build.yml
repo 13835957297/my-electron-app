@@ -43,4 +43,5 @@ jobs:
       - name: 📤 上传安装包
         uses: actions/upload-artifact@v4
         with:
+          name: dist-${{ matrix.os }} 
           path: dist/**
